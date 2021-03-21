@@ -3,9 +3,7 @@ import { BufReader } from 'https://deno.land/std@0.90.0/io/bufio.ts';
 import { parse } from 'https://deno.land/std@0.90.0/encoding/csv.ts';
 import { pick } from 'https://deno.land/x/lodash@4.17.15-es/lodash.js';
 
-interface Planet {
-  [key: string]: string;
-}
+type Planet = Record<string, string>;
 
 let planets: Array<Planet>;
 

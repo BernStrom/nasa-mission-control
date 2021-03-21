@@ -7,18 +7,8 @@ type Planet = Record<string, string>;
 
 let planets: Array<Planet>;
 
-const loadPlanetsData = async () => {
-  const path = join('data', 'NASA_exoplanet_archive.csv');
-  const file = await Deno.open(path);
-  const bufReader = new BufReader(file);
-  const result = await parse(bufReader, {
-    skipFirstRow: true,
-    comment: '#',
-  });
-
-  Deno.close(file.rid);
-
-  const planets = (result as Array<Planet>).filter((planet) => {
+export const filterHabitablePlanets = (planets: Array<Planet>) => {
+  return planets.filter((planet) => {
     const planetaryRadius = Number(planet['koi_prad']);
     const stellarMass = Number(planet['koi_smass']);
     const stellarRadius = Number(planet['koi_srad']);
@@ -33,6 +23,20 @@ const loadPlanetsData = async () => {
       stellarRadius < 1.01
     );
   });
+}
+
+const loadPlanetsData = async () => {
+  const path = join('data', 'NASA_exoplanet_archive.csv');
+  const file = await Deno.open(path);
+  const bufReader = new BufReader(file);
+  const result = await parse(bufReader, {
+    skipFirstRow: true,
+    comment: '#',
+  });
+
+  Deno.close(file.rid);
+
+  const planets = filterHabitablePlanets(result as Array<Planet>);
 
   return planets.map((planet) => {
     return pick(planet, [

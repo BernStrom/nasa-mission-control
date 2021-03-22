@@ -49,7 +49,7 @@ const loadPlanetsData = async () => {
 };
 
 planets = await loadPlanetsData();
-log.info(`${planets.length} habitable planets found!`);
+log.info(`${planets.length} habitable planets found! 🌎`);
 
 export const getAllPlanets = () => {
   return planets;

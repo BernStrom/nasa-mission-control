@@ -63,6 +63,16 @@ export const getOneLaunch = (id: number) => {
   return null;
 };
 
+export const removeOneLaunch = (id: number) => {
+  const aborted = launches.get(id);
+  if (aborted) {
+    aborted.upcoming = false;
+    aborted.success = false;
+  }
+
+  return aborted;
+};
+
 export const addOneLaunch = (data: Launch) => {
   launches.set(
     data.flightNumber,

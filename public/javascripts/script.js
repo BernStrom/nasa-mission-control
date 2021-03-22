@@ -36,9 +36,12 @@ function loadPlanets() {
     });
 }
 
-function abortLaunch() {
-  // TODO: Once API is ready.
-  // Delete launch and reload launches.
+function abortLaunch(id) {
+  return fetch(`/launches/${id}`, {
+    method: 'delete',
+  })
+    .then(loadLaunches)
+    .then(listUpcoming);
 }
 
 function submitLaunch() {
@@ -48,7 +51,7 @@ function submitLaunch() {
   const rocket = document.getElementById('rocket-name').value;
   const flightNumber = launches[launches.length - 1].flightNumber + 1;
 
-  return fetch('launches', {
+  return fetch('/launches', {
     method: 'post',
     headers: {
       'Content-Type': 'application/json',

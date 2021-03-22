@@ -1,7 +1,4 @@
-import { join } from 'https://deno.land/std@0.90.0/path/mod.ts';
-import { BufReader } from 'https://deno.land/std@0.90.0/io/bufio.ts';
-import { parse } from 'https://deno.land/std@0.90.0/encoding/csv.ts';
-import { pick } from 'https://deno.land/x/lodash@4.17.15-es/lodash.js';
+import { log, join, parse, BufReader, pick } from '../deps.ts';
 
 type Planet = Record<string, string>;
 
@@ -23,7 +20,7 @@ export const filterHabitablePlanets = (planets: Array<Planet>) => {
       stellarRadius < 1.01
     );
   });
-}
+};
 
 const loadPlanetsData = async () => {
   const path = join('data', 'NASA_exoplanet_archive.csv');
@@ -52,7 +49,7 @@ const loadPlanetsData = async () => {
 };
 
 planets = await loadPlanetsData();
-console.log(`${planets.length} habitable planets found!`);
+log.info(`${planets.length} habitable planets found!`);
 
 export const getAllPlanets = () => {
   return planets;

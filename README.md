@@ -21,7 +21,7 @@ NASA Mission Control is a full-stack web application where users can schedule sp
 
 The mission control dashboard also contains past launch missions all the way back to year 2006 with data such as the date of launch, mission & rocket name and the customer(s) of each mission. All data of past mission launches are obtained from an open-source SpaceX API.
 
-For removal of any scheduled missions, simply click on the :x: button found on the left-hand side of each mission in the upcoming section of the mission dashboard.
+For removal of any scheduled missions, simply click on the :x:&nbsp; button found on the left-hand side of each mission in the upcoming section of the mission dashboard.
 
 ## :gear: Core Tech Stack
 * :sauropod:&nbsp; Deno 

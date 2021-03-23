@@ -24,8 +24,16 @@ The mission control dashboard also contains past launch missions all the way bac
 For removal of any scheduled missions, simply click on the :x:&nbsp; button found on the left-hand side of each mission in the upcoming section of the mission dashboard.
 
 ## :gear: Core Tech Stack
-* :sauropod:&nbsp; Deno 
+**Backend**
+* :sauropod:&nbsp; Deno
 * :chipmunk:&nbsp; Oak
+* :lock_with_ink_pen:&nbsp; TypeScript
+
+**Frontend**
+* :framed_picture:&nbsp; HTML5 & CSS3
+* :cupcake:&nbsp; Vanilla JS
+
+**Production & Deployment**
 * :whale:&nbsp; Docker
 * :orange_square:&nbsp; AWS EC2
 

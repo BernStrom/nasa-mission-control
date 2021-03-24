@@ -1,6 +1,6 @@
-<div align="center">
+<!-- <div align="center">
     <img alt="NASA Logo" src="./public/images/nasa-logo.png" />
-</div>
+</div> -->
 
 <h1 align="center">
     NASA Mission Control

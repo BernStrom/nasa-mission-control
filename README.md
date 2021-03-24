@@ -50,6 +50,6 @@ NOTE: _**Any newly-created/ removal of launch missions by the user will not be p
 This project is licensed under the terms of the MIT license. For more information, please refer to the license [documentation](LICENSE.md).
 
 ## :warning: Disclaimer
-This application uses an unofficial API that bares no official association, affiliation, authorization or endorsement of any kind to Space Exploration Technologies Corp (SpaceX) or any of its subsidiaries or its affiliates.
+This application uses an unofficial API that bares no official association, affiliation, authorization or endorsement of any kind to Space Exploration Technologies Corp (SpaceX) or any of its subsidiaries or its affiliates. The application was created only to be a mockup of an actual space launch mission control program and was build for the sole purpose of exploring and working with [Deno](https://deno.land/ "Deno").
 
 The contents of these pages are provided as an information guide only. While every effort is made in preparing the material for publication, no responsibility is accepted by or on behalf of the owner(s) for any errors, omissions or misleading statements on these pages or any site to which these pages connect. Although every effort is made to ensure the reliability of listed sites this cannot be taken as an endorsement of these sites.

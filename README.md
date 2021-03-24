@@ -6,6 +6,8 @@
     NASA Mission Control
 </h1>
 
+<img width="100%" src="public/images/app-demo.png" alt="NASA Mission Launch Control Dashboard"> 
+
 <h6 align="center">
     Habitable planents data gathered from the <a href="https://exoplanetarchive.ipac.caltech.edu/docs/data.html">NASA Exoplanet Archive</a> 
 </h6>

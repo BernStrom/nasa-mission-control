@@ -25,6 +25,8 @@ The mission control dashboard also contains past launch missions all the way bac
 
 For removal of any scheduled missions, simply click on the :x:&nbsp; button found on the left-hand side of each mission in the upcoming section of the mission dashboard.
 
+NOTE: _**Any newly-created/ removal of launch missions by the user will not be permanently saved in the application as these data are not stored in a database of any kind but rather being fetched and displayed directly in the frontend of the application from a third-party API and a `.csv` document.**_
+
 ## :gear: Core Tech Stack
 **Backend**
 * :sauropod:&nbsp; Deno
@@ -48,6 +50,6 @@ For removal of any scheduled missions, simply click on the :x:&nbsp; button foun
 This project is licensed under the terms of the MIT license. For more information, please refer to the license [documentation](LICENSE.md).
 
 ## :warning: Disclaimer
-This program uses an unofficial API that bares no official association, affiliation, authorization or endorsement of any kind to Space Exploration Technologies Corp (SpaceX) or any of its subsidiaries or its affiliates.
+This application uses an unofficial API that bares no official association, affiliation, authorization or endorsement of any kind to Space Exploration Technologies Corp (SpaceX) or any of its subsidiaries or its affiliates.
 
 The contents of these pages are provided as an information guide only. While every effort is made in preparing the material for publication, no responsibility is accepted by or on behalf of the owner(s) for any errors, omissions or misleading statements on these pages or any site to which these pages connect. Although every effort is made to ensure the reliability of listed sites this cannot be taken as an endorsement of these sites.
